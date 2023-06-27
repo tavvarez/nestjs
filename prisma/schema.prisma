@@ -10,9 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Asset {
-  id         String @id @map("_id")
+  id         String   @id @map("_id")
   symbol     String
   price      Float
   created_at DateTime @default(now())
